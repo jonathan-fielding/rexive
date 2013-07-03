@@ -70,3 +70,7 @@ pre {
   opacity:0.3;
   filter:alpha(opacity=30);
 }
+
+.center {
+  text-align: center;
+}
