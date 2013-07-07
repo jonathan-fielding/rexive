@@ -3,4 +3,4 @@ rexive
 
 A truly mobile-ready responsive system.
 
-[http://brantleye.com/rexive]
+http://brantleye.github.io/rexive/
