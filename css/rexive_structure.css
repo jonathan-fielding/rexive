@@ -11,6 +11,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+*:not(html) {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 /* Containers contain rows
 ********************************************/
 .container {
