@@ -17,19 +17,18 @@
       , headerHeight
       , content;
 
-    function setContentHeight() {
+    function headerOffset() {
       headerHeight = header.outerHeight(true);
-      content.css('height', win.height() - headerHeight);
+      content.css('padding-top', headerHeight);
     }
 
     $(function () {
       win = $(window);
       header = $('#header');
       content = $('#body');
-      content.css('overflow-y','scroll');
 
-      setContentHeight();
-      win.on('resize', setContentHeight);
+      headerOffset();
+      win.on('resize', headerOffset);
     });
   }
 ));
