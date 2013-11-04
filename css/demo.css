@@ -6,8 +6,11 @@ body {
   color: #333333;
 }
 
-#header .container {
+#header {
   background-color: #fff;
+}
+
+#header .container {
   border-bottom:1px solid #333;
 }
 
