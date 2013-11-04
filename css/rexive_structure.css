@@ -2,11 +2,11 @@
   margin:0;
   padding:0;
   -webkit-text-size-adjust:none;
-  -webkit-tap-highlight-color:transparent;
 }
 
-/* For "fixed" header logic
+/* These are useful for doing anything fun
 ********************************************/
+/*
 #body {
   -webkit-overflow-scrolling: touch;
 }
@@ -14,13 +14,14 @@
 *:not(html) {
   -webkit-transform: translate3d(0, 0, 0);
 }
+*/
 
 /* Containers contain rows
 ********************************************/
 .container {
   position:relative;
   width:94%;
-  max-width: 1024px;
+  max-width: 760px;
   margin-left:auto;
   margin-right:auto;
   overflow:hidden;
@@ -29,6 +30,13 @@
 .fullscreen {
   width: 100%;
   max-width: 100%;
+}
+
+#header {
+  position:fixed;
+  top:0;
+  z-index:1;
+  width:100%;
 }
 
 /* Rows contain columns
@@ -105,7 +113,8 @@
   height:1em;
 }
 
-
+/* Cut-off point between Tablet and Phone
+********************************************/
 @media (max-width: 719px) { 
 
   body {
@@ -116,6 +125,10 @@
     width:98%;
   }
 
+  .right {
+    text-align: left;
+  }
+
 
   /* Mobile behavior for offsets
   ********************************************/
@@ -124,7 +137,7 @@
   }
 
   .moffset {
-    height:1em;
+    height:100%;
     display: block;
   }
 
@@ -172,15 +185,5 @@
   .not_mobile {
     display:none;
   }
-
-}
- 
-@media (min-width: 569px) and (max-width: 768px) {
-  
-
-  
-}
- 
-@media (min-width: 769px) {
 
 }
