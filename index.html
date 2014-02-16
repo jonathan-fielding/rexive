@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
   <title>Rexive</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+  <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <meta name='apple-mobile-web-app-capable' content='yes'>
   <meta name='apple-mobile-web-app-status-bar-style' content='black'>
   <meta charset='utf-8'>
@@ -14,16 +14,18 @@
 </head>
 <body>
 
-  <div id='header' class='container'>
-    <div class='row'>
-      <h1 class='col12'>Rexive</h1>
+  <div id='header'>
+    <div class='container'>
+      <div class='row'>
+        <h1 class='col12'>Rexive</h1>
+      </div>
     </div>
   </div>
 
   <div id='body'>
     <div class='container'>
       <div class='row'>
-        <p class='col12'>Rexive is a responsive structure for mobile, tablet, and desktop. The order there is important, and what sets Rexive apart from every other grid system.</p>
+        <p class='col12'>Rexive is a tablet-first, mobile-ready responsive structure. Open up the console and check out how it works!</p>
         <p class='col12'>Rexive is light to the point that it's ugly. It assumes you have your own style.</p>
       </div>
 
@@ -54,7 +56,7 @@
       <div class='section'>
         <div class='row'>
           <div class='col12'>
-            <h2>Persistent columns (setting Rexive apart)</h2>
+            <h2>Persistent columns</h2>
             <h3>A class that persists column widths into mobile.</h3>
           </div>
         </div>
@@ -81,7 +83,7 @@
       <div class='section'>
         <div class='row'>
           <div class='col12'>
-            <h2>Dynamic columns (placing Rexive on a pedestal)</h2>
+            <h2>Dynamic columns</h2>
             <h3>Advanced use of the m class: match any col with any mcol.</h3>
           </div>
         </div>
@@ -191,7 +193,7 @@
         <div class='row'>
           <div class='col4'>
             <h3>Page Width</h3>
-            <p>Add a "max-width" in pixels or ems to the container class.</p>
+            <p>Add a "max-width" to the container class.</p>
           </div>
           <div class='col4'>
             <h3>Media Queries</h3>
@@ -199,11 +201,14 @@
           </div>
           <div class='col4'>
             <h3>Only what you need</h3>
-            <p>The intention of Rexive is to be light, easy, powerful, and out of the way of your styles.</p>
+            <p>The intention of Rexive is to be light, easy, powerful, and out of the way of your other stylesheets.</p>
           </div>
         </div>
         
       </div>
+
+<!-- /*
+Outdated section
 
       <div class='section'>
         <div class='row'>
@@ -233,8 +238,9 @@ $(window).onresize(function(){
             </pre>
           </div>
         </div>
-        
       </div>
+*/ -->
+        
 
       
       <div class='row'>
@@ -244,10 +250,8 @@ $(window).onresize(function(){
     </div>
   </div>
 
-<![if !IE]>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
   <script type='text/javascript' src='js/rexive_structure.js'></script>
-<![endif]>
 
 </body>
 </html>
